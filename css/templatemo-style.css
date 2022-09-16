@@ -23,9 +23,18 @@ a:hover {
   max-width: 1310px;
 }
 
+.logoimg {
+  width: 100px;
+  height: 100px;
+}
+
 .small,
 small {
-  font-size: 90%;
+  font-size: 80%;
+  padding-right: auto;
+  color: darkgray;
+  text-shadow: black;
+  font-weight: bolder;
 }
 
 .parallax-window {
@@ -48,24 +57,16 @@ small {
   height: 200px;
   display: flex;
   align-items: center;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
   justify-content: center;
 }
 
-.tm-brand-icon {
-    width: 70%;
-  height: 60%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #333436;
-  color: white;
-  border-radius: 50%;
-  margin-right: 25px;
-}
 
 .tm-brand-name {
-  font-size: 2.3rem;
+  font-size: 145%;
   color: #333333;
 }
 
@@ -175,10 +176,14 @@ small {
 .tm-home-title {
   font-size: 3.5rem;
   margin-bottom: 40px;
+  text-shadow: -1px 1px darkgray ;
+
 }
 
 .tm-home-text {
   margin-bottom: 47px;
+  color: rgb(255, 217, 0);
+  font-size: 22px;
 }
 
 .btn {
@@ -461,7 +466,7 @@ p {
 }
 
 .tm-services-detail-box {
-  padding: 80px 70px;
+  padding: 5%;
   margin-top: 22px;
   margin-bottom: 41px;
 }
