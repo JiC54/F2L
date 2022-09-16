@@ -18,9 +18,9 @@
         <div class="row tm-brand-row">
           <div class="col-lg-4 col-11">
             <div class="tm-brand-container tm-bg-white-transparent">
-              <img src="img/logo.jpg" style="width: 100px; height: 100px; margin-right: 20px;">
+              <img src="img/logo.png" class="logoimg">
               <div class="tm-brand-texts">
-                <h1 class="text-uppercase tm-brand-name">FilesToLinks</h1>
+                <h1 class="text-uppercase tm-brand-name"><strong>FilesToLinks</strong></h1>
                 <p class="small">A   space   to   upload   your   files!</p>
               </div>
             </div>
@@ -68,8 +68,8 @@
               <p class="text-uppercase tm-slogan"><i class="fas fa-2x fa-link"></i>Welcome to FilesToLinks</p>
               <hr class="tm-home-hr" />
               <h2 class="tm-home-title">What is FilesToLinks?</h2>
-              <p class="tm-home-text">
-                This is a service that lets you upload files on the internet and gives you a streamable as well as a direct download of the file.
+              <p class="tm-home-text"><strong>
+                This is a service that lets you upload files on the internet and gives you a streamable as well as a direct download of the file.</strong>
               </p>
               <a href="#tmServices" class="btn btn-primary">Learn More</a>
             </div>
@@ -87,8 +87,11 @@
                   FilesToLinks is currently running on Telegram via bot; <a href="https:t.me/filestolinks1_bot" style="color: lightblue;">Files To Links</a>. Due to Telegram restriction or rather maximum upload size allowed, our bot lets you upload big files or folders of any size up to 4 GB as Telegram allows and the bot as soon as the file upload finish the bot gives you a URL link that you can share as you please.
                 </p>
                 <p>
-                  FilesToLinks bot offer a no-account required file sharing service. You don't need to register and create an account, to upload and share files. You simply start the bot and the bot self-explain everything. When you upload your files to our bot, don't worry about your data's safety. Once your file has been uploaded, it is scanned for viruses as well as if it contains <a href="https://en.wikipedia.org/wiki/Not_safe_for_work" style="color: red;">NSFW.</a> <tag style="font-family: cursive; color: gray; font-style: italic; cursor: pointer;">Why are files scanned before being uploaded?</tag></br>
+                  FilesToLinks bot offer a no-account required file sharing service. You don't need to register and create an account, to upload and share files. You simply start the bot and the bot self-explain everything. When you upload your files to our bot, don't worry about your data's safety. Once your file has been uploaded, it is scanned for viruses as well as if it contains <span style="color: red; cursor: pointer;" onclick="myFunction()">NSFW Contents.</span> <small id="nsfwdefinition"></small><span style="font-family: cursive; color: lightgray; font-style: italic; cursor: pointer;"> Why are files scanned before being uploaded?</span><br>
+                </p>
+                <P>
                   Scanning usually takes 3 to 13 seconds depending on file size, we've very powerful servers no matter how large your file is scanning will never take longer than 13s. In association with the highest bandwidth of our servers (950mbps), your files are uploaded in no time, and then the urls of the file are given to you by the bot.
+                  
 
 
                 </p>
@@ -154,6 +157,11 @@
       </div>
       <!-- .container-fluid -->
     </div>
+    <script type="text/javascript">
+      function myFunction() {
+      document.getElementById("nsfwdefinition").innerHTML = "Not safe for work (NSFW) is Internet slang or shorthand used to mark links to content, videos or website pages the viewer may not wish to be seen looking at in a public, formal or controlled environment. The marked content may contain nudity, pornography, political incorrectness, profanity, slurs, graphic violence or other potentially disturbing subject matter. Environments that may be problematic include workplaces, schools, and family settings. NSFW has particular relevance for people trying to make personal use of the Internet at workplaces or schools which have policies prohibiting access to sexual and graphic subject matter. Conversely, safe for work (SFW) is used for links that do not contain such material, but where the title might otherwise lead people to think that content is NSFW. The similar expression not safe for life (NSFL) is also used, referring to content which is so nauseating or disturbing that it might be emotionally scarring to view. Links marked NSFL may contain fetish pornography, gore or murder, <cite><a href='https://en.m.wikipedia.org/wiki/Not_safe_for_work' target='_blank'>wikipedia</a></cite>.";
+         }
+    </script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
