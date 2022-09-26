@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="FilesToLinks" />
     <title>Copyright</title>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -84,6 +84,9 @@
                     <p class="tm-services-description mb-0 small">
                         Notice of Alleged Infringement “Notice”  
                     </p>
+                                <div class="loader"></div>
+
+      </div>
                 </div>
             </div>
           </div>   
@@ -149,7 +152,17 @@
       </div>
       <!-- .container-fluid -->
     </div>
-
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
