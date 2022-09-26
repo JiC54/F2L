@@ -4,12 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="FilesToLinks" />
     <title>About FilesToLinks</title>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
+    <style type="text/css">
+      .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+    </style>
   </head>
   <body id="aboutPage">
     <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg-01.jpg">
@@ -138,6 +177,7 @@
           
         </section>
 
+
         <!-- Page footer -->
         <footer class="row">
           <p class="col-12 text-white text-center tm-copyright-text">
@@ -147,6 +187,20 @@
       </div>
       <!-- .container-fluid -->
     </div>
+    <div class="loader"></div>
+
+      </div>
+      <script type="text/javascript">
+      window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+    </script>
     <script type="text/javascript">
 
       function myFunction() {
