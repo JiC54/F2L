@@ -4,14 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="FilesToLinks" />
     <title>Features</title>
-
+    <style type="text/css">
+    .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+    </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
   </head>
+
   <body id="servicesPage">
+
     <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg-01.jpg">
       <div class="container-fluid">
         <div class="row tm-brand-row">
@@ -73,11 +113,13 @@
         <section id="tmAppFeatures">
             <div class="row">
                 <header class="col-12 text-center text-white tm-bg-black-transparent p-5 tm-app-header">
+
                     <h2 class="text-uppercase mb-3 tm-app-feature-header">FilesToLinks Features</h2>
                     <p class="mb-0 small"></p>
-                </header>
-            </div>
 
+                </header>
+
+            </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="tm-bg-white-transparent tm-app-feature-box">
@@ -187,7 +229,20 @@
       </div>
       <!-- .container-fluid -->
     </div>
+                                            <div class="loader"></div>
 
+      </div>
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
