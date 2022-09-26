@@ -376,7 +376,7 @@ p {
 }
 
 .tm-about-title-hr {
-  border-top-color: black;
+  border-top-color: white;
   max-width: 450px;
   margin-bottom:;
 }
@@ -843,10 +843,13 @@ p {
 }
 .list{text-decoration: none;}
 .footer{
-  display: inline-flex;
   color: white;
-
+  line-height: 2em;
 }
+.footerlist{
+  display: inline-flex;
+}
+
 a{ color: inherit; }
 .submitnotice{
   background-color: goldenrod;
@@ -884,4 +887,22 @@ font-family: 'Poppins', sans-serif;
 } 
 .show>.submitnotice.dropdown-toggle{
   background-color: gray;
+}
+.ytd{
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding-left: auto;
+  padding-right: auto;
+  }
+
+  .pad{
+    padding-left: 10vw;
+  }
+
+footer {
+  
 }
