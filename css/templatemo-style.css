@@ -23,16 +23,18 @@ a:hover {
 
 .container-fluid {
   max-width: 1310px;
+  transition: opacity 5s ease-in;
 }
 
 .logoimg {
   width: 100px;
   height: 100px;
+  transition: opacity 15s ease-in;
 }
 
 .small,
 small {
-  font-size: 80%;
+  font-size: 70%;
   padding-right: auto;
   color: darkgray;
   text-shadow: black;
@@ -42,16 +44,19 @@ small {
 .parallax-window {
   min-height: 1100px;
   background: transparent;
+  transition: opacity 5s ease-in;
 }
 
 .tm-bg-white-transparent {
   background-color: rgba(255, 255, 255, 0.8);
+  transition: opacity 5s ease-in;
 }
 
 .tm-brand-row {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 28px;
+  transition: opacity 5s ease-in;
 }
 
 .tm-brand-container {
@@ -64,27 +69,32 @@ small {
   padding-top: auto;
   padding-bottom: auto;
   justify-content: center;
+  transition: opacity 25s ease-in;
 }
 
 
 .tm-brand-name {
   font-size: 145%;
   color: #333333;
+  transition: opacity 5s ease-in;
 }
 
 /* Nav */
-.tm-navbar {/*   padding: 19px 63px; */max-width: 840px;min-height: 120px;justify-content:;}
+.tm-navbar {/*   padding: 19px 63px; */max-width: 840px;min-height: 120px;justify-content:;
+  transition: opacity 5s ease-in;}
 
 .tm-navbar .navbar-nav {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: opacity 5s ease-in;
 }
 
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 19px;
+  transition: opacity 15s ease-in;
 }
 
 .navbar-light .navbar-nav .nav-link,
