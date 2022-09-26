@@ -4,8 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="FilesToLinks" />
     <title>Contact Us</title>
-
+    <style type="text/css">
+    .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+    </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -78,8 +116,12 @@
                  data-image-src="img/people.jpg">
 
                  <div class="tm-bg-black-transparent text-center tm-services-header tm-testimonials-header">
+
                     <h2 class="text-uppercase tm-services-page-title tm-testimonials-page-title"><b>Contact Us!</h2>
                     <p class="tm-services-description mb-0 small">
+                       <div class="loader"></div>
+
+      </div>
                         
                     </p>
                 </div>
@@ -134,9 +176,27 @@
           </p>
         </footer>
       </div>
+
       <!-- .container-fluid -->
     </div>
+     <script type="text/javascript">
+      window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+    </script>       
+      <script type="text/javascript">
 
+      function myFunction() {
+      document.getElementById("read").innerHTML = "With the utmost emphasis on privacy, our technology is accessible to everyone and works with the devices you already own, including mobile phones, web browsers, and the command line for power users. You and your data are never the products while using FilesToLinks.";
+
+      }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
